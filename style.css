@@ -1,0 +1,78 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+body{
+    background-color:#1F2229;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 1em;
+    font-size: clamp(.5rem, 2.5vmin, 2rem);
+}
+.grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    grid-template-columns: repeat(5, 5em);
+    grid-template-rows: repeat(6, 5em);
+    gap: .25em;
+}
+.cell{
+    font-size: 2.5em;
+    color: white;
+    border:.125em solid hsl(240,2% ,23%);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: transform .25s linear;
+}
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(20,minmax(auto,1.5em));
+    grid-template-rows: 2em; 
+    gap: .2em;
+    justify-content: center;
+    user-select: none;
+}
+.key{
+    font-size: inherit;
+    grid-column: span 2;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    background-color: black;
+    color: #fff;
+    fill:#fff;
+}
+.big{
+    grid-column: span 3;
+}
+.key>svg{
+    height: 1.75em;
+    width: 1.75em;
+    pointer-events: none;
+}
+.active{
+    background-color: black;
+}
+.flip{
+    transform: rotatex(90deg);
+}
+.wrong{
+    background-color: #787C7E;
+}
+.wrong-position{
+    background-color: #C9B458;
+}
+.correct{
+    background-color: #6AAA64;
+}
