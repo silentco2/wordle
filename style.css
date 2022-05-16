@@ -76,3 +76,13 @@ body{
 .correct{
     background-color: #6AAA64;
 }
+#sallam{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: sallam 1s ease-in-out forwards;
+    animation-play-state: paused;
+}
+@keyframes sallam {100%{opacity: 1;}}
