@@ -1,6 +1,7 @@
 // cell.style.backgroundColor = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16)
 const grid = document.querySelector('.grid')
 const sallam = document.getElementById("sallam")
+const doctor = document.getElementById("doctor")
 for (let i = 0; i < 30; i++) {
     const cell = document.createElement('div')
     cell.classList.add('cell')
@@ -15354,7 +15355,11 @@ function submit(){
       sallam.style.animationPlayState = "running"
       return
   }
-    if(!meaningless.includes(guess)&&guess!="salma"){
+  if(guess === "amany"){
+    doctor.style.animationPlayState = "running"
+    return
+}
+    if(!meaningless.includes(guess)&&guess!="salma"&&guess!="amany"){
         alert("Not A Word")
         return
     }

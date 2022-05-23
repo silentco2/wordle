@@ -82,7 +82,21 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 0;
-    animation: sallam 1s ease-in-out forwards;
+    animation: doctor 1s ease-in-out forwards;
     animation-play-state: paused;
 }
-@keyframes sallam {100%{opacity: 1;}}
+#doctor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    opacity: 0;
+    animation: doctor 1s ease-in-out forwards;
+    animation-play-state: paused;
+}
+#doctor>*{
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+}
+@keyframes doctor {100%{opacity: 1;}}
