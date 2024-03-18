@@ -1,6 +1,7 @@
 // cell.style.backgroundColor = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16)
 const grid = document.querySelector('.grid')
-const sallam = document.getElementById("sallam")
+// const sallam = document.getElementById("sallam")
+const salma = document.getElementById("salma")
 const doctor = document.getElementById("doctor")
 for (let i = 0; i < 30; i++) {
     const cell = document.createElement('div')
@@ -15352,7 +15353,7 @@ function submit(){
     }
     const guess = active.reduce((word,cell)=>word+cell.dataset.letter, "")
     if(guess === "salma"){
-      sallam.style.animationPlayState = "running"
+      salma.style.animationPlayState = "running"
       return
   }
   if(guess === "amany"){
