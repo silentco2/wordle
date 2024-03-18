@@ -76,11 +76,12 @@ body{
 .correct{
     background-color: #6AAA64;
 }
-#sallam{
+#salma{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-color: #fff;
     opacity: 0;
     animation: doctor 1s ease-in-out forwards;
     animation-play-state: paused;
